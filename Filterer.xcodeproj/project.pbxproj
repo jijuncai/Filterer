@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25E97881C5EE987006713F6 /* imageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E97871C5EE987006713F6 /* imageFilters.swift */; };
+		B25E978A1C5EEA23006713F6 /* filterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E97891C5EEA23006713F6 /* filterCell.swift */; };
+		B26CB0B21C5F04F800A98477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CB0B11C5F04F800A98477 /* ViewController.swift */; };
 		B2CB478E1C33B122004EF0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB478D1C33B122004EF0A9 /* AppDelegate.swift */; };
-		B2CB47901C33B122004EF0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB478F1C33B122004EF0A9 /* ViewController.swift */; };
 		B2CB47931C33B122004EF0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CB47911C33B122004EF0A9 /* Main.storyboard */; };
 		B2CB47951C33B122004EF0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB47941C33B122004EF0A9 /* Assets.xcassets */; };
 		B2CB47981C33B122004EF0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CB47961C33B122004EF0A9 /* LaunchScreen.storyboard */; };
+		B2CB47A01C33B378004EF0A9 /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB479F1C33B378004EF0A9 /* RGBAImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B21313A41C39DC85009BC185 /* Filterer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Filterer-Bridging-Header.h"; sourceTree = "<group>"; };
+		B25E97871C5EE987006713F6 /* imageFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageFilters.swift; sourceTree = "<group>"; };
+		B25E97891C5EEA23006713F6 /* filterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = filterCell.swift; sourceTree = "<group>"; };
+		B26CB0B11C5F04F800A98477 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2CB478A1C33B122004EF0A9 /* Filterer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filterer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CB478D1C33B122004EF0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2CB478F1C33B122004EF0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2CB47921C33B122004EF0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2CB47941C33B122004EF0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CB47971C33B122004EF0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CB47991C33B122004EF0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CB479F1C33B378004EF0A9 /* RGBAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +62,15 @@
 			isa = PBXGroup;
 			children = (
 				B2CB478D1C33B122004EF0A9 /* AppDelegate.swift */,
-				B2CB478F1C33B122004EF0A9 /* ViewController.swift */,
+				B25E97871C5EE987006713F6 /* imageFilters.swift */,
+				B26CB0B11C5F04F800A98477 /* ViewController.swift */,
+				B25E97891C5EEA23006713F6 /* filterCell.swift */,
+				B2CB479F1C33B378004EF0A9 /* RGBAImage.swift */,
 				B2CB47911C33B122004EF0A9 /* Main.storyboard */,
 				B2CB47941C33B122004EF0A9 /* Assets.xcassets */,
 				B2CB47961C33B122004EF0A9 /* LaunchScreen.storyboard */,
 				B2CB47991C33B122004EF0A9 /* Info.plist */,
+				B21313A41C39DC85009BC185 /* Filterer-Bridging-Header.h */,
 			);
 			path = Filterer;
 			sourceTree = "<group>";
@@ -136,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CB47901C33B122004EF0A9 /* ViewController.swift in Sources */,
+				B26CB0B21C5F04F800A98477 /* ViewController.swift in Sources */,
+				B25E97881C5EE987006713F6 /* imageFilters.swift in Sources */,
+				B2CB47A01C33B378004EF0A9 /* RGBAImage.swift in Sources */,
 				B2CB478E1C33B122004EF0A9 /* AppDelegate.swift in Sources */,
+				B25E978A1C5EEA23006713F6 /* filterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +264,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Filterer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jijuncai.Filterer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Filterer/Filterer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +281,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Filterer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jijuncai.Filterer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Filterer/Filterer-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -287,6 +312,7 @@
 				B2CB479E1C33B122004EF0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
